@@ -34,7 +34,7 @@ def _filterCreateDmgOutput(stderr):
 
 def createDmgFile(logger):
     """Create a DMG file for the application bundle."""
-    create_dmg_path = getExecutablePath("termux-elf-cleaner")
+    create_dmg_path = getExecutablePath("create-dmg")
 
     if create_dmg_path is None and os.path.exists("/opt/homebrew/bin/create-dmg"):
         create_dmg_path = "/opt/homebrew/bin/create-dmg"
